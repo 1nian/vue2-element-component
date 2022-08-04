@@ -93,7 +93,7 @@ export default {
       params.append('files', file.raw)
       try {
         if (this.handleExceed()) {
-          
+          // 通过后台接口获取返回的地址
           const info = {
             uid: file.uid || Date.now(),
             url : '上传成功之后后台返回的地址'
