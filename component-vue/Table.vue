@@ -23,7 +23,7 @@
             :key="item.prop"
             v-bind="item"
           >
-            <slot :name="item.__slotName"></slot>
+            <slot :name="item.__slotName" :row="item"></slot>
           </el-table-column>
         </template>
       </template>
