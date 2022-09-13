@@ -23,7 +23,9 @@
             :key="item.prop"
             v-bind="item"
           >
-            <slot :name="item.__slotName" :row="item"></slot>
+            <template slot-scope="scope">
+              <slot :name="item.__slotName" :row="scope.row"></slot>
+            </template>
           </el-table-column>
         </template>
       </template>
